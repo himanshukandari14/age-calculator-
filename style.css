@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #5358d6 100%);
+
+}
+#head{
+    font-family: 'Gabarito', cursive;
+}
+#main{
+
+background: rgba(255, 255, 255, 0.17);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.4px);
+-webkit-backdrop-filter: blur(2.4px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+.darkmode{
+    background-color: #1a1a1c;
+    background-image: linear-gradient(19deg, #1a1a1c 0%, #3b3b3b 100%);
+}
+#light{
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes spin {
+    from { transform: rotate(-360deg);}
+    to {transform:rotate(0deg)}
+    }
+
+#dark{
+animation-name: scale;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+@keyframes scale {
+    0%{
+        transform: scale(1);
+    }
+     50%{
+        transform: scale(1.2);
+    }
+     100%{
+        transform: scale(1);
+    }
+    }
+

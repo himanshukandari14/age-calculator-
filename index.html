@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calc|hymanshu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <!-- wrapper -->
+    <div class="h-[100vh] w-[100vw] flex parent">
+        <!-- main body -->
+        <div id="left" class="px-[10%] h-full w-full md:w-[65%] flex flex-col justify-center items-center">
+            <!-- header -->
+            <div id="head" class=" text-[40px] md:text-[90px] w-full text-white select-none">JavaScript <br><span class="text-[#fffb0c]"> Age Calculator</span></div>
+            <!-- field -->
+            <div id="main" class=" w-full h-[120px] md:h-[140px] rounded-2xl">
+                <form action="" class="h-full w-full flex    justify-center items-center px-5">
+                  <div class="w-[100%] items-center h-full md:h-[60%] flex-col md:flex md:flex-row  justify-center md:items-center gap-[50px] md:gap-x-3">
+                      <input type="date" name="date" id="dob" class=" h-[50px] w-[65%] bg-white rounded-lg px-4 ">
+                      <button id="calcbtn" type="button" class="bg-[#fffb0c] px-4 py-3 hover:bg-[#ffdb0c] rounded-lg text-[20px] font-semibold">Calculate</button>
+                  </div>
+                </form>
+                <!-- age column -->
+                <div id="agesection" class="text-white text-[50px] font-bold hover:text-[#ffdf3e]"></div>
+            </div>
+        </div>
+        <!-- right side -->
+           <div id="right" class=" pt-10 pr-24 h-full w-full md:w-[35%] flex flex-col justify-start items-end gap-3">
+            <img id="dark" src="./icons8-dark-mode-40.png" class="h-[100px] w-[100px] md:h-[50px] md:w-[50px]" >
+            <img id="light" src="./icons8-light-mode-40 (1).png" alt="" height="50" width="50" hidden>
+           </div>
+        
+
+    </div>
+    <script defer src="app.js"></script>
+</body>
+</html>
